@@ -1,0 +1,20 @@
+name : kodezi-ai-workflow
+
+on:
+  workflow_dispatch:
+  
+permissions: write-all
+jobs:
+  kodezi-ai-workflow:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v2
+  
+      - name: config detail
+        run: git config user.name kdz-git-bot[bot] && git config user.email kdz-git-bot[bot]@users.noreply.github.com
+
+      - name: delete workflow file
+        run: rm -rf .github/workflows/generate1732273830588.yaml
+undefined
+  
