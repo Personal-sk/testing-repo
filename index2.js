@@ -1,1 +1,1 @@
-console.lo("hei");
+console.log("example")
