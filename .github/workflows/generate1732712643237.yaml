@@ -1,0 +1,34 @@
+name : kodezi-ai-workflow
+
+on:
+  workflow_dispatch:
+  
+permissions: write-all
+jobs:
+  kodezi-ai-workflow:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v2
+  
+      - name: config detail
+        run: git config user.name kdz-git-bot[bot] && git config user.email kdz-git-bot[bot]@users.noreply.github.com
+
+      - name: delete workflow file
+        run: rm -rf .github/workflows/generate1732712643237.yaml
+      
+      - name: Open the 'index.js' file in your preferred text editor.
+        run: Open 'index.js' in text editor
+      
+      - name: Locate the sections of the code where you want to add comments.
+        run: Locate the sections for comments
+      
+      - name: Add comments to the code. In JavaScript, you can use '//' for single line comments or '/* */' for multi-line comments.
+        run: Add comments in 'index.js'
+      
+      - name: Save the 'index.js' file after adding the comments.
+        run: Save 'index.js'
+      
+      - name: Close the text editor.
+        run: Close text editor
+  
